@@ -1,4 +1,5 @@
 com\tecsup\minishop\repository\ProductRepositoryIntegrationTest.class
 com\tecsup\minishop\controller\ProductControllerIntegrationTest.class
 com\tecsup\minishop\MinishopApplicationTests.class
+com\tecsup\minishop\service\ProductServiceTest.class
 com\tecsup\minishop\service\ProductServiceIntegrationTest.class

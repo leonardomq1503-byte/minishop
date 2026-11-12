@@ -1,4 +1,4 @@
-# Created at 2026-11-11T18:42:11.868
+# Created at 2026-11-11T19:40:24.002
 Boot Manifest-JAR contains absolute paths in classpath 'D:\minishop\minishop\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

@@ -1,4 +1,5 @@
-D:\minishop\minishop\src\test\java\com\tecsup\minishop\controller\ProductControllerIntegrationTest.java
-D:\minishop\minishop\src\test\java\com\tecsup\minishop\repository\ProductRepositoryIntegrationTest.java
-D:\minishop\minishop\src\test\java\com\tecsup\minishop\MinishopApplicationTests.java
-D:\minishop\minishop\src\test\java\com\tecsup\minishop\service\ProductServiceIntegrationTest.java
+D:\minishop\minishop\src\test\java\com\tecsup\minishop\MinishopApplicationIT.java
+D:\minishop\minishop\src\test\java\com\tecsup\minishop\repository\ProductRepositoryIT.java
+D:\minishop\minishop\src\test\java\com\tecsup\minishop\service\ProductServiceIT.java
+D:\minishop\minishop\src\test\java\com\tecsup\minishop\service\ProductServiceTest.java
+D:\minishop\minishop\src\test\java\com\tecsup\minishop\controller\ProductControllerIT.java

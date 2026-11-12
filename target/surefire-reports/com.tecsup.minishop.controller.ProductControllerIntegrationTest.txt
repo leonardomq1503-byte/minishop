@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.tecsup.minishop.controller.ProductControllerIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.885 s -- in com.tecsup.minishop.controller.ProductControllerIntegrationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.236 s -- in com.tecsup.minishop.controller.ProductControllerIntegrationTest
