@@ -4,3 +4,4 @@ com\tecsup\minishop\model\Product$ProductBuilder.class
 com\tecsup\minishop\model\Product.class
 com\tecsup\minishop\controller\ProductController.class
 com\tecsup\minishop\MinishopApplication.class
+com\tecsup\minishop\service\ProductNotFoundException.class
