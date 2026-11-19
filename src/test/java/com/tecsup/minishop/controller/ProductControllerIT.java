@@ -2,6 +2,7 @@ package com.tecsup.minishop.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tecsup.minishop.model.Product;
+import com.tecsup.minishop.model.ProductDTO;
 import com.tecsup.minishop.repository.ProductRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -39,7 +40,7 @@ class ProductControllerIntegrationTest {
     @Test
     @DisplayName("POST /api/products — debe crear un producto y retornar 201")
     void shouldCreateProductAndReturn201() throws Exception {
-        Product product = Product.builder()
+        ProductDTO productDTO = ProductDTO.builder()
                 .name("Webcam Logitech")
                 .price(250.00)
                 .stock(20)
@@ -47,7 +48,7 @@ class ProductControllerIntegrationTest {
 
         mockMvc.perform(post("/api/products")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(product)))
+                        .content(objectMapper.writeValueAsString(productDTO)))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.id").isNotEmpty())
                 .andExpect(jsonPath("$.name").value("Webcam Logitech"))
