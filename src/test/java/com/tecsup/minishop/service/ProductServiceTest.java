@@ -1,7 +1,15 @@
 package com.tecsup.minishop.service;
 
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import com.tecsup.minishop.model.Product;
 import com.tecsup.minishop.repository.ProductRepository;
+import com.tecsup.minishop.service.ProductService;
+import com.tecsup.minishop.service.ProductNotFoundException;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -56,5 +64,23 @@ class ProductServiceTest {
 
         assertDoesNotThrow(() ->
                 productService.save(product));
+    }
+
+    @Test
+    void findById_inexistente_lanzaProductNotFoundException() {
+
+        // Arrange
+        ProductRepository repository = mock(ProductRepository.class);
+
+        when(repository.findById(99L))
+                .thenReturn(Optional.empty());
+
+        ProductService service = new ProductService(repository);
+
+        // Act + Assert
+        assertThrows(
+                ProductNotFoundException.class,
+                () -> service.findById(99L)
+        );
     }
 }

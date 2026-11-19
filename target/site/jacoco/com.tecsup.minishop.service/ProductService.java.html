@@ -28,13 +28,13 @@ public class ProductService {
         }
 <span class="fc" id="L29">    }</span>
 
-    public List&lt;Product&gt; findAll() {
+    public List&lt;Product&gt; findAll() { 
 <span class="fc" id="L32">        return productRepository.findAll();</span>
     }
 
     public Product findById(Long id) {
 <span class="fc" id="L36">        return productRepository.findById(id)</span>
-<span class="fc" id="L37">                .orElseThrow(() -&gt; new RuntimeException(&quot;Producto no encontrado con id: &quot; + id));</span>
+<span class="fc" id="L37">                .orElseThrow(() -&gt; new ProductNotFoundException(id));</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
